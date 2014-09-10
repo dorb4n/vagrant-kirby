@@ -7,7 +7,7 @@ if [ ! -h /var/www ];
 then
 
     rm -rf /var/www
-    ln -s /vagrant/public /var/www
+    ln -s /vagrant /var/www
 
     a2enmod rewrite
 
