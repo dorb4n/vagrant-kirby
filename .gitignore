@@ -1,0 +1,5 @@
+.vagrant
+.DS_Store
+/public/site/accounts
+/public/assets/avatars
+/public/thumbs/*
