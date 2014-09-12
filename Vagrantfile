@@ -12,7 +12,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision :shell, path: "bootstrap.sh"
   
   config.vm.synced_folder "./public", "/vagrant", id: "vagrant-root",
-    owner: "vagrant",
+    owner: "www-data",
     group: "www-data",
     mount_options: ["dmode=775,fmode=664"]
 end

@@ -2,6 +2,7 @@
 
 apt-get update
 apt-get install -y apache2 node-less php5 libapache2-mod-php5 php5-curl
+usermod -a -G www-data vagrant
 
 if [ ! -h /var/www ];
 then
